@@ -202,9 +202,10 @@ La configuración de la base de datos y otras configuraciones específicas de la
 ```yaml
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/mi_base_de_datos
+    url: jdbc:mysql://localhost:3307/courses_articles?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: root
-    password: mi_contraseña
+    password: P4ssw0rd@
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
