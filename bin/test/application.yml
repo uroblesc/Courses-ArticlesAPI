@@ -1,0 +1,39 @@
+spring:
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: false
+  datasource:
+    url: jdbc:mysql://localhost:3307/courses_articles?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: P4ssw0rd@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+    hibernate:
+      ddl-auto: none
+      database-platform: org.hibernate.dialect.MySQL8Dialect
+  sql:
+    init:
+      mode: always
+  security:
+    user:
+      name: admin
+      password: P4ssw0rd@
+server:
+  port: 8080
+app:
+  files:
+    sqlfile-path: courses_articles.sql
+  jwt:
+    secret-key: Y2FzZTQkV1GxNjj1H0XfwsLvS23pA!77nxa2
+    expiration-time: 1800000
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+logging:
+  level:
+    '[org.springframework.web]': DEBUG

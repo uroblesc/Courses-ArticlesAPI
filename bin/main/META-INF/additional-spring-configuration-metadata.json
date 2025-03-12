@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "app.files.sqlfile-path",
+    "type": "java.lang.String",
+    "description": "A description for 'app.files.sqlfile-path'"
+  },
+  {
+    "name": "app.jwt.secret-key",
+    "type": "java.lang.String",
+    "description": "A description for 'app.jwt.secret-key'"
+  },
+  {
+    "name": "app.jwt.expiration-time",
+    "type": "java.lang.String",
+    "description": "A description for 'app.jwt.expiration-time'"
+  },
+  {
+    "name": "spring.jpa.hibernate.format_sql",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.format_sql'"
+  },
+  {
+    "name": "spring.jpa.hibernate.use_sql_comments",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.use_sql_comments'"
+  },
+  {
+    "name": "spring.jpa.hibernate.dialect",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.dialect'"
+  },
+  {
+    "name": "spring.jpa.hibernate.database-platform",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.database-platform'"
+  }
+]}
